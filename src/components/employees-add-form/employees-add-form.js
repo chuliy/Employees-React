@@ -1,6 +1,7 @@
 import { Component } from 'react';
 
-import './employees-add-form.css';
+// import './employees-add-form.css';
+import './employees-add-form.scss';
 
 class EmployeesAddForm extends Component {
     constructor(props) {
@@ -24,6 +25,10 @@ class EmployeesAddForm extends Component {
             name: '',
             salary: ''
         })
+    }
+
+    static onLog = () => {
+        console.log('hi');
     }
 
     render() {
@@ -55,5 +60,7 @@ class EmployeesAddForm extends Component {
         )
     }
 }
+
+EmployeesAddForm.onLog();
 
 export default EmployeesAddForm;
